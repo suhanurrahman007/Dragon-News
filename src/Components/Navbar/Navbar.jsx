@@ -1,4 +1,4 @@
-import { NavLink } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 import "./Navbar.css"
 import profile from "../../assets/user.png"
 
@@ -77,7 +77,7 @@ const Navbar = () => {
               <img src={profile} />
             </div>
           </label>
-          <a className=" btn-neutral rounded-lg text-xs px-7 py-3">Login</a>
+          <Link to={"/login"} className=" btn-neutral rounded-lg text-xs px-7 py-3">Login</Link>
         </div>
       </div>
     );
